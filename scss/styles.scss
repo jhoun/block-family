@@ -14,6 +14,10 @@ $medium-screen: screen and (min-width: 600px) and (max-width: 900px);
 $large-screen: screen and (min-width: 901px) and (max-width: 1200px);
 
 // Mixins
+@mixin font_family($block_font_size: 50px, $block_font_color: green){
+  font-size: $block_font_size;
+  color: $block_font_color;
+}
 
 // Styles
 body{
@@ -40,7 +44,7 @@ h1{
 }
 
 h2{
-
+  @include font_family(40px, yellow);
 }
 
 
