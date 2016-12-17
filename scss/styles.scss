@@ -1,16 +1,28 @@
 // Resets, Clearfix, etc
+@import 'partials/_clearfix.scss';
+@import 'partials/_reset.scss';
 
 // Variables
+$dark-color: blue;
+$light-color: pink;
+$bright-color: yellow;
 
+$padding: 20px;
 // Media Query Ranges
+$moblile-screen: screen and (min-width: 320px) and (max-width: 480px);
+$medium-screen: screen and (min-width: 600px) and (max-width: 900px);
+$large-screen: screen and (min-width: 901px) and (max-width: 1200px);
 
 // Mixins
 
 // Styles
 body{
-  background-color: orange;
+  background-color: magenta;
   text-align: center;
   color: #EEE;
+  @media #{$moblile-screen}{
+    background-color: $dark-color;
+  }
 }
 
 h1, h2, h3, h4{
