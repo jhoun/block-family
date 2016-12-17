@@ -11,7 +11,7 @@ $padding: 20px;
 // Media Query Ranges
 $moblile-screen: screen and (min-width: 320px) and (max-width: 480px);
 $medium-screen: screen and (min-width: 600px) and (max-width: 900px);
-$large-screen: screen and (min-width: 901px) and (max-width: 1200px);
+$large-screen: screen and (min-width: 901px) and (max-width: 2000px);
 
 // Mixins
 @mixin font_family($block_font_size: 50px, $block_font_color: green){
@@ -25,13 +25,31 @@ body{
   text-align: center;
   color: #EEE;
   @media #{$large-screen}{
-    background-color: $bright-color;
+      background-color: $bright-color;
+      ul{
+        li{
+          float: left;
+          margin-right: 10px;
+          width: 250px;
+        }
+    }
   }
   @media #{$medium-screen}{
     background-color: $light-color;
+    ul{
+      li{
+        float: left;
+        margin-left: 10px;
+      }
+    }
   }
   @media #{$moblile-screen}{
     background-color: $dark-color;
+    ul{
+      li{
+        float: none;
+      }
+    }
   }
 }
 
@@ -48,8 +66,10 @@ h2{
 }
 
 
+
+
 .block_family{
-  max-width:350px;
+  max-width: 1000px;
   margin:auto;
 }
 
