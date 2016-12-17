@@ -20,6 +20,12 @@ body{
   background-color: magenta;
   text-align: center;
   color: #EEE;
+  @media #{$large-screen}{
+    background-color: $bright-color;
+  }
+  @media #{$medium-screen}{
+    background-color: $light-color;
+  }
   @media #{$moblile-screen}{
     background-color: $dark-color;
   }
