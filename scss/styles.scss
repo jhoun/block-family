@@ -28,7 +28,7 @@ body{
       background-color: $bright-color;
       ul{
         li{
-          float: left;
+          display: inline-block;
           margin-right: 10px;
           width: 250px;
         }
@@ -38,8 +38,7 @@ body{
     background-color: $light-color;
     ul{
       li{
-        float: left;
-        margin-left: 10px;
+        // display: inline-block;
       }
     }
   }
@@ -47,7 +46,7 @@ body{
     background-color: $dark-color;
     ul{
       li{
-        float: none;
+        // display: inline-block;
       }
     }
   }
